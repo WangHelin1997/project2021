@@ -1,3 +1,8 @@
+"""
+@authors: Helin Wang
+@Introduction: Trainer
+"""
+
 import time
 from loss import get_loss,focal_loss
 import torch
