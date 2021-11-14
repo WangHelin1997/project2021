@@ -1,6 +1,9 @@
 # project2021
 PKU team for 2021 project 'Guangchangwu detection'.
 
+## Note
+To test or train, change the paths in the .py files to your own paths.
+
 ## To Test
 
 Test single audio file (Now support 5-second audio)
