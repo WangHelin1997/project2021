@@ -1,3 +1,7 @@
+"""
+@authors: Helin Wang, Dongchao Yang
+"""
+
 import os
 import torch
 import argparse
@@ -84,10 +88,6 @@ def main():
         '-file_path', type=str,
         default='/home/pkusz/home/PKU_team/new_data/test/20211016T191855_121568658-1_165_1.wav',
         help='test file path')
-    parser.add_argument(
-        '-test_path', type=str,
-        default='/home/pkusz/home/PKU_team/new_data/test',
-        help='test files path')
     parser.add_argument(
         '-test_single_file', type=bool,
         default=False,
