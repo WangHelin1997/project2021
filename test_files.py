@@ -1,3 +1,7 @@
+"""
+@authors: Helin Wang, Dongchao Yang
+"""
+
 import os
 import torch
 import argparse
@@ -83,10 +87,6 @@ def main():
     parser.add_argument(
         '-gpuid', type=str, default='0', help='Enter GPU id number')
     parser.add_argument(
-        '-file_path', type=str,
-        default='/home/pkusz/home/PKU_team/guangchang/data_splits/2021-02-25-20-17-52-2.4G/2021-02-25-20-17-52-2.4G.wav_260_0.wav',
-        help='test file path')
-    parser.add_argument(
         '-test_path', type=str,
         default='/home/pkusz/home/PKU_team/new_data/test',
         help='test files path')
@@ -98,16 +98,6 @@ def main():
     args = parser.parse_args()
     gpuid = [int(i) for i in args.gpuid.split(',')]
     separation = Detection(args.model_pth, gpuid)
-    # if args.test_single_file:
-    #     print(separation.inference(args.file_path))
-    # else:
-    #     data_list = []
-    #     for root, dirs, files in os.walk(args.test_path):
-    #         for name in files:
-    #             file = os.path.join(root, name)
-    #             data_list.append(file)
-    #     for file in data_list:
-    #         print(separation.inference(file))
     separation.test(args.test_path)
 
 if __name__ == "__main__":
