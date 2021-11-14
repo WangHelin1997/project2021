@@ -83,7 +83,7 @@ class Detection():
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument(
-        '-model_pth', type=str, default='/home/pkusz/home/PKU_team/pku_code/checkpoint/net/best.pt', help="Path to model file.")
+        '-model_pth', type=str, default='./checkpoint/net/best.pt', help="Path to model file.")
     parser.add_argument(
         '-gpuid', type=str, default='0', help='Enter GPU id number')
     parser.add_argument(
