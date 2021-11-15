@@ -4,6 +4,13 @@ PKU team for 2021 project 'Guangchangwu detection'.
 ## Note
 To test or train, change the paths in the .py files to your own paths.
 
+## Activate environment
+```
+cd 
+su
+conda activate pku
+```
+
 ## To Test
 
 Test single audio file (Now support 5-second audio)
