@@ -6,7 +6,7 @@ To test or train, change the paths in the .py files to your own paths.
 
 ## Activate environment
 ```
-cd 
+cd /home/pkusz/home/PKU_team/pku_code/
 su
 conda activate pku
 ```
